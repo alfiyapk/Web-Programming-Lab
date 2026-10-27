@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>
+</title>
+</head>
+<link rel="stylesheet" type="text/css" href="form.css">
+<body>
+<form>
+	<h1><center>REGISTRATION FORM</center></h1>
+	<fieldset><legend>Personal Details</legend>
+		<label for ="name">Name:</label>
+		<select>
+			<option>Mr.</option>
+			<option>Miss.</option>
+			<option>Mrs.</option>
+		</select>			
+		<input type="text" id="name" required><br><br>
+		<label for="phone" class="c3">Phone:
+		<input type="tel" required></label>
+		<label>Email:</label>
+		<input type="email" id="email" required>
+		<br><br>
+		<label>Gender:</label>
+		<input type="radio" id="gender"><label>Male</label>
+		<input type="radio" id="gender"><label>Female</label>
+		<input type="radio" id="gender"><label>Others</label>
+	</fieldset>
+	<fieldset><legend>Address Details</legend>
+		<label>Address:</label>
+		<textarea id="address" required></textarea>
+		<br><br>
+		<label>Language known:</label>
+		<input type="checkbox" id="Malayalam"><label>Malayalam</label>
+		<input type="checkbox" id="English"><label>English</label>
+		<input type="checkbox" id="Hindi"><label>Hindi</label>
+		<br><br>
+		<label>Course:</label>
+		<select>	
+			<option>BCA</option>
+			<option>BTech</option>
+			<option>MTech</option>
+			<option>MCA</option>
+		</select>
+		<br><br>
+	</fieldset>
+	<center><button>Submit</button></center>
+</form>
+</body>	
+</html>	
