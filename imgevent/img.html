@@ -1,0 +1,26 @@
+<html>
+<head>
+<title></title>
+</head>
+<body>
+	<img src="a.jpeg" id="image" onmouseover="one()"
+     onmouseout="two()">
+     <p id="p1">
+<script>
+function one()
+{
+    document.getElementById("image").src = "b.jpeg";
+    document.getElementById("p1").innerHTML = "onmouseover";
+    document.getElementById("p1").style.color="blue";
+}
+
+function two()
+{
+    document.getElementById("image").src = "c.jpeg";
+    document.getElementById("p1").innerHTML = "onmouseout";
+    document.getElementById("p1").style.color="red";
+}
+</script>
+</body>
+</html>
+
