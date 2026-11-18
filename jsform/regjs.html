@@ -25,6 +25,7 @@
 <label for="gender">Gender:</label>
 <input type="radio" name="gender" value="Male">Male
 <input type="radio" name="gender" value="Female">Female
+<input type="radio" name="gender" value="Others">Others
 <br><br>
 
 <label>Language Known:</label>
@@ -84,6 +85,11 @@ function validateForm()
 		document.form.email.focus();
 		return false;
 	}
+	if (!document.querySelector('input[name="gender"]:checked')) {
+    alert("Please Select Your Gender");
+    document.form.gender[0].focus();
+    return false;
+}
 	if (password == "") {
 	    alert("Enter Your Password");
 	    document.form.password.focus();
@@ -115,5 +121,3 @@ function validateForm()
 	
 </body>
 <html>
-
-	
